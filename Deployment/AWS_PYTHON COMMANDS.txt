@@ -1,0 +1,15 @@
+sudo apt-get update && sudo apt-get install python3-pip
+sudo apt update
+sudo apt install python3-flask
+sudo apt install python3-sklearn
+sudo apt install python3-numpy
+python3 app.py
+
+
+sudo apt install python3-venv
+python3 -m venv myenv
+source myenv/bin/activate
+pip install scikit-learn
+pip install numpy
+pip install flask
+python3 app.py

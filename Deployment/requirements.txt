@@ -2,3 +2,34 @@ numpy
 scikit-learn ==1.0.2
 pandas
 flask
+
+
+# Change drive and directory in one command
+cd /d "E:\ML_Project"
+
+# Create a new Conda environment
+conda create -n mlenv python=3.11
+
+# View all Conda environments
+conda env list
+
+# Activate the environment
+conda activate mlenv
+
+# Install required libraries
+pip install flask numpy pandas scikit-learn matplotlib seaborn joblib
+
+# Train and save the ML model (creates model.pkl using pickle)
+python model.py
+
+# Run the Flask application
+python app.py
+
+# Open in your browser
+http://127.0.0.1:5000/
+
+# Stop the Flask server
+Ctrl + C
+
+# Deactivate the environment
+conda deactivate

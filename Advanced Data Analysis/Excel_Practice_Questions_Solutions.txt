@@ -1,0 +1,189 @@
+EXCEL PRACTICE QUESTIONS & SOLUTIONS
+
+DATASET:
+Name | Department | Sales | Region | Target
+
+--------------------------------------------------
+Q1. Create a new column called Status.
+Condition:
+If Sales >= Target -> Eligible for Incentive
+Else -> Not Eligible for Incentive
+
+Formula (assuming Sales=C2 and Target=E2):
+=IF(C2>=E2,"Eligible for Incentive","Not Eligible for Incentive")
+
+--------------------------------------------------
+Q2. Find the total Sales of the Marketing department.
+
+Formula:
+=SUMIF(B2:B9,"Marketing",C2:C9)
+
+Answer:
+18000
+
+--------------------------------------------------
+Q3. Find the total Sales of the Sales department.
+
+Formula:
+=SUMIF(B2:B9,"Sales",C2:C9)
+
+Answer:
+24000
+
+--------------------------------------------------
+Q4. Find the Sales where Department is Sales and Region is East.
+
+Formula:
+=SUMIFS(C2:C9,B2:B9,"Sales",D2:D9,"East")
+
+Answer:
+13000
+
+--------------------------------------------------
+Q5. Count how many times Marketing appears in the Department column.
+
+Formula:
+=COUNTIF(B2:B9,"Marketing")
+
+Answer:
+3
+
+--------------------------------------------------
+Q6. Count how many employees belong to HR.
+
+Formula:
+=COUNTIF(B2:B9,"HR")
+
+Answer:
+2
+
+--------------------------------------------------
+Q7. Count employees in the Sales department and East region.
+
+Formula:
+=COUNTIFS(B2:B9,"Sales",D2:D9,"East")
+
+Answer:
+1
+
+--------------------------------------------------
+Q8. Find the highest Sales value.
+
+Formula:
+=MAX(C2:C9)
+
+Answer:
+13000
+
+--------------------------------------------------
+Q9. Find the lowest Sales value.
+
+Formula:
+=MIN(C2:C9)
+
+Answer:
+2000
+
+--------------------------------------------------
+Q10. Find the average Sales.
+
+Formula:
+=AVERAGE(C2:C9)
+
+Answer:
+5937.5
+
+--------------------------------------------------
+Q11. Find total company Sales.
+
+Formula:
+=SUM(C2:C9)
+
+Answer:
+47500
+
+--------------------------------------------------
+Q12. Count the total number of employees.
+
+Formula:
+=COUNTA(A2:A9)
+
+Answer:
+8
+
+--------------------------------------------------
+Q13. Find the number of unique departments.
+
+Excel 365:
+=COUNTA(UNIQUE(B2:B9))
+
+Older Excel:
+Use Remove Duplicates or Pivot Table
+
+Answer:
+3
+
+--------------------------------------------------
+Q14. Find total Target for Marketing department.
+
+Formula:
+=SUMIF(B2:B9,"Marketing",E2:E9)
+
+Answer:
+24000
+
+--------------------------------------------------
+Q15. Find total Sales in East region.
+
+Formula:
+=SUMIF(D2:D9,"East",C2:C9)
+
+Answer:
+21500
+
+--------------------------------------------------
+Q16. Find employees eligible for incentive.
+
+Formula:
+=FILTER(A2:F9,F2:F9="Eligible for Incentive")
+(Excel 365)
+
+Answer:
+Bob, Lucy
+
+--------------------------------------------------
+Q17. Find percentage of employees eligible for incentive.
+
+Formula:
+=COUNTIF(F2:F9,"Eligible for Incentive")/COUNTA(A2:A9)
+
+Answer:
+25%
+
+--------------------------------------------------
+Q18. Create a Pivot Table:
+Rows = Department
+Values = Sum of Sales
+
+Expected Result:
+Marketing = 18000
+Sales = 24000
+HR = 5500
+
+--------------------------------------------------
+Q19. Create a Pivot Table:
+Rows = Region
+Values = Sum of Sales
+
+Expected Result:
+North = 7000
+South = 10500
+East = 21500
+West = 8500
+
+--------------------------------------------------
+Q20. Conditional Formatting:
+Highlight Sales values greater than Target.
+
+Rule:
+Cell Value > Target Cell

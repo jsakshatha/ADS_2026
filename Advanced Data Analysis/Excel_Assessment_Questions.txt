@@ -1,0 +1,43 @@
+EXCEL ASSESSMENT SHEET (QUESTIONS ONLY)
+
+Dataset: Name, Department, Sales, Region, Target
+
+1. Create a Status column. If Sales >= Target, display "Eligible for Incentive", otherwise "Not Eligible for Incentive".
+
+2. Find the total Sales of the Marketing department.
+
+3. Find the total Sales of the Sales department.
+
+4. Find the total Sales in the East region.
+
+5. Find the Sales where Department = Sales and Region = East.
+
+6. Count how many employees belong to the Marketing department.
+
+7. Count how many employees belong to the HR department.
+
+8. Count employees in the Sales department and East region.
+
+9. Find the highest Sales value.
+
+10. Find the lowest Sales value.
+
+11. Find the average Sales.
+
+12. Find the total company Sales.
+
+13. Count the total number of employees.
+
+14. Count the number of unique departments.
+
+15. Find the total Target for the Marketing department.
+
+16. Find the percentage of employees eligible for incentive.
+
+17. Create a Pivot Table showing Department-wise Sales.
+
+18. Create a Pivot Table showing Region-wise Sales.
+
+19. Highlight employees whose Sales exceed their Target using Conditional Formatting.
+
+20. Find the names of employees eligible for incentive.

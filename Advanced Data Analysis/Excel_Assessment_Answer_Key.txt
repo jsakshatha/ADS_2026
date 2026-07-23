@@ -1,0 +1,86 @@
+EXCEL ASSESSMENT SHEET - ANSWER KEY
+
+1.
+=IF(C2>=E2,"Eligible for Incentive","Not Eligible for Incentive")
+
+2.
+=SUMIF(B2:B9,"Marketing",C2:C9)
+Answer: 18000
+
+3.
+=SUMIF(B2:B9,"Sales",C2:C9)
+Answer: 24000
+
+4.
+=SUMIF(D2:D9,"East",C2:C9)
+Answer: 21500
+
+5.
+=SUMIFS(C2:C9,B2:B9,"Sales",D2:D9,"East")
+Answer: 13000
+
+6.
+=COUNTIF(B2:B9,"Marketing")
+Answer: 3
+
+7.
+=COUNTIF(B2:B9,"HR")
+Answer: 2
+
+8.
+=COUNTIFS(B2:B9,"Sales",D2:D9,"East")
+Answer: 1
+
+9.
+=MAX(C2:C9)
+Answer: 13000
+
+10.
+=MIN(C2:C9)
+Answer: 2000
+
+11.
+=AVERAGE(C2:C9)
+Answer: 5937.5
+
+12.
+=SUM(C2:C9)
+Answer: 47500
+
+13.
+=COUNTA(A2:A9)
+Answer: 8
+
+14.
+Unique Departments = 3
+(Marketing, Sales, HR)
+
+15.
+=SUMIF(B2:B9,"Marketing",E2:E9)
+Answer: 24000
+
+16.
+=COUNTIF(F2:F9,"Eligible for Incentive")/COUNTA(A2:A9)
+Answer: 25%
+
+17.
+Department-wise Sales:
+Marketing = 18000
+Sales = 24000
+HR = 5500
+
+18.
+Region-wise Sales:
+North = 7000
+South = 10500
+East = 21500
+West = 8500
+
+19.
+Conditional Formatting Rule:
+Sales > Target
+
+20.
+Eligible Employees:
+Bob
+Lucy
